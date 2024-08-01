@@ -1,0 +1,47 @@
+import random
+    
+Funcion=facil
+funcion=dificil
+print("eliga que funcion desea usar facil o dificil")
+Funcion=int(input())
+if Funcion == "facil":
+    Aleatorio=random.randint(1,20)
+Intentos=0
+Vidas=6
+Num=0
+    while(Intentos == Vidas):
+        Intentos=Intentos+1
+    print("ingrese un numero entre el 1 y 20 usted tendra 6 intentos")
+    Num=int(input())
+    if Num < Aleatorio:
+        print("el numero ingresado es mayor, intente nuevamente")
+    if Num > Aleatorio:
+        print("el numero ingresado es menor, intente nuevamente")
+    if Num == Aleatorio:
+        print("felicitaciones, adivinaste el numero")
+    else:
+        print("se le acabaron los intentos")
+    break
+if funcion == "dificil":
+Aleatorio=random.randint(1,200)
+Intentos=0
+Vidas=7
+Num=0
+    while(Intentos == Vidas):
+        Intentos=Intentos+1
+    print("ingrese un numero entre el 1 y 200 usted tendra 7 intentos")
+    Num=int(input())
+    if Num < Aleatorio:
+        print("el numero ingresado es mayor, intente nuevamente")
+    if Num > Aleatorio:
+        print("el numero ingresado es menor, intente nuevamente")
+    if Num == Aleatorio:
+        print("felicitaciones, adivinaste el numero")
+    else:
+        print("se le acabaron los intentos")
+    break
+    
+
+        
+    
+    
